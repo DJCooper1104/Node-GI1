@@ -46,10 +46,3 @@ A command-line application for managing personal notes.
 5. List all notes: `node app.js list`
 6. Read a note: `node app.js read --title="Note Title"`
 
-## Setup
-
-To run any of these applications:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/DJCooper1104/Node-GI1.git
