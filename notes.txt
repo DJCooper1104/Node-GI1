@@ -1,0 +1,55 @@
+Node.js Overview
+Andrew Mead’s PDF Node Guide: 
+
+Installing Node.js: Download the installer from Node’s official website, follow the setup, and verify installation with node -v in the terminal.
+
+Pre-Node Limitations: JavaScript was restricted to browsers, unable to handle databases or file systems outside the browser. Node.js extended its capabilities to the server-side.
+
+What is Node.js?: A runtime built on the Chrome V8 engine, providing additional libraries and tools for server-side development. It uses C++ bindings for enhanced performance.
+
+REPL Statements: An interactive shell for running JavaScript directly in the terminal using node.
+
+Why Learn Node.js?: It’s widely used in production by top companies for backend and full-stack development.
+
+Non-Blocking I/O: Allows other processes to run while waiting for I/O operations, improving efficiency. It’s like multitasking while baking pies.
+
+Running JS Scripts in Node: Execute with node filename.js in the terminal.
+
+Core Modules and Custom Modules: Use require() for core modules and npm install for external packages or your own modules.
+
+Key Concepts in Node.js
+I/O Model: Input/Output operations in Node.js involve non-blocking methods to enhance performance, allowing background processing while users interact with the UI.
+
+Process.argv: An array containing command-line arguments, useful for customizing program behavior.
+
+Yargs: A package simplifying command-line argument parsing and creating user-friendly commands.
+
+Saving Data: Use core fs methods for file handling and JSON for structured data storage.
+
+Asynchronous Concepts
+Call Stack, Callback Queue, and Event Loop: These work together to manage synchronous and asynchronous tasks. Functions move to the callback queue after Node API processing and re-enter the call stack when it’s empty.
+
+HTTP Requests: Enable communication with external APIs using tools like request or fetch. API keys secure these requests.
+
+Callback Functions: Functions provided as arguments to handle asynchronous operations, ensuring clean and functional code.
+
+Express.js and Handlebars
+Express.js: A library for creating servers, APIs, and websites. Install via npm install express.
+
+Static Websites: Serve unaltered content to users, such as HTML files.
+
+Routing with Express: 
+Use app.get and res.send for dynamic responses, including strings, JSON, or HTML.
+
+404 Pages: Catch unmatched routes using wildcard '*'.
+Handlebars: A template engine for dynamic content rendering. Use templates for pages and partials for reusable components.
+HTTP and URLs
+
+Query Strings: Append key-value pairs to URLs to pass data to the server, such as ?search=city.
+
+HTTPS Requests on the Client-Side: Use fetch with a .then() method to handle responses or errors.
+
+High-Level vs. Low-Level Errors: High-level errors stem from client-side issues like API limits, while low-level errors are due to server-side misconfigurations.
+
+Ports: Use port 3000 by convention for local development. Other ports may be reserved or conflict with system processes.
+Static Directory: Serve files like CSS or images using express.static().

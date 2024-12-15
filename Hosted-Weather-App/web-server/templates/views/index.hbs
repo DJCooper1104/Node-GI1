@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+   
+   <script src="https://kit.fontawesome.com/59f0f74002.js" crossorigin="anonymous"></script>
+    <title>Weather</title>
+    {{!-- links.mead.io/pic3 kept giving me errors --}}
+     <link rel="icon" href="/img/picslinksmead.png"> 
+</head>
+<body>
+    <div class="main-content">
+      {{>navbar}}
+      <i class="fa-solid fa-cloud-sun-rain"></i>
+   {{>header}}
+   <p>Use this site to get the weather for any place you desire !</p>
+
+   <form>
+    <input placeholder="Location">
+    <button>Search</button>
+    {{!-- where error message will be primted if we need one --}}
+    <div id="output">
+    <p id="message-1"></p> 
+    {{!-- where data will output --}}
+    <p id="message-2"></p>
+    </div>
+   </form>
+   </div>
+    
+    {{>footer}}
+
+  <script src="/js/app.js"></script>
+</body>
+
+</html>
+
+{{!-- replacing index.html --}}

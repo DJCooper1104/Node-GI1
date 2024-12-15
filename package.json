@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "languagedetect": "^2.0.0",
+    "postman-request": "^2.88.1-postman.40"
+  },
+  "name": "nodeudemy2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node web-server/src/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

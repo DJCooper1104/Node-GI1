@@ -1,0 +1,36 @@
+--to impleement qa search feture use query strong
+--query strings are at the end of the URL, start with a key value pair to pass additional info to server" ?search=games"
+--when creating the backend, we can choose to support as many or as few search queries as we'd like
+--info about query string lives on request parameter on app.get
+--req.query is also an object and contains all the query info
+--Cannot set headers after they are sent to the client means that you are sending two request at once and you can only send one. add return to stop function execution and send back response
+
+////////wiring up weather end point 
+--defaultm param syntax allows us to set default values if no params are passed (name = 'user'). if arg provided that value will be used, if not then default
+--destructuring ojbects - ({first object}={}) empty object will be returned instead of error
+--can also set up default values for if no match is found ex {label, stock = 0} stock will show up if that value is in the obkect passed in call
+--nodemon src/app.js -e js
+,hbs to run nodemon in webserver src 
+--destructured object would return undefined if error
+
+
+///////browser http request with fetch
+
+--fetch is browser based api, can be used in all modern browsers but not accesible in node js.
+--fetch is a function and when you call it you pass through a string
+--calling fetch in clientside will kickoff asynch io operation just like calling request in node js. provide a function and function will run in future when data is avaliable.
+--instead of passing calling callback function  to second argument like in node, we use .then method on return value and provide callback function. get access to response as first and only arg. lets use extract data or dump to console
+--.then part of promise api--asynch await and promise work together
+--fetch used to get forecast data in clinetside js
+
+///////creating a search form
+--deafult behavior of forms is to auto refresh page
+--e for event
+--e.preventDefault() to prevent auto refresh/deafult behavior
+--put fetch function inside of event listener to fetch data after the search button is clicked
+//////wiring up user interface
+-- placing the loading message.textcontent outside of fetch function(but still inside of event listener) allows us to print loading message while we wait for data to be printed.
+//deployment
+-- git for version control, github to backup sorce code & collab
+--heroku deployment 
+--  both need access to project code.
